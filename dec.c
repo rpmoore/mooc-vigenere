@@ -46,7 +46,7 @@ bool valid_char(unsigned char c) {
     
     return false;
     */
-    if (37 < c && c < 127) return true;
+    if (31 < c && c < 127) return true;
     
     return false;
 }
@@ -163,7 +163,7 @@ void find_key_values(unsigned char* buff, size_t buff_size, int key_size) {
 int main(void) {
     unsigned char input[MAX_BUF];
     size_t buffer_size;
-    unsigned char keys[7] = {0xAB, 0x0A, 0x80, 0xBB, 0x46, 0xDB, 0x2C};
+    unsigned char keys[7] = {0xBA, 0x1F, 0x91, 0xB2, 0x53, 0xCD, 0x3E};
 
     memset(input, 0, sizeof(input));
     buffer_size = loadBuffer(input);
